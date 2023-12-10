@@ -6,10 +6,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   
   body {
     font-family: "Poppins", sans-serif;
+    background-color: lightskyblue;
+    
   }
   
   html {
@@ -24,7 +27,7 @@
 
   /* HEADER */
 
-  #title {
+  #title_header {
     text-align: center;
     font-size: 100px;
     color: blue;
@@ -41,20 +44,21 @@
   nav {
     justify-content: space-around;
     align-items: flex-end;
-    height: 4vh;
+    height: 5vh;
+    margin-bottom: 100px;
     
   }
 
   .nav-links {
     gap: 15px;
     list-style: none;
-    font-size: larger;
+    font-size: x-large;
   }
 
   a {
     color: black;
     text-decoration: none;
-    text-decoration-color: white;
+    text-decoration-color: blue;
   }
 
   a:hover {
@@ -63,4 +67,61 @@
     text-underline-offset: 5px;
     text-decoration-color: blue;
   }
+
+/* IMAGE SLIDERS */
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.wrapper {
+    max-width: 1300px;
+    
+}
+
+.wrapper,
+    .carousel {
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+}
+
+.carousel img {
+    height: 370px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    margin-top: 200px;
+    margin-left: 14px;
+    
+}
+
+.carousel {
+    overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 12px; /* Set the height of the scrollbar */
+  }
+  
+  .carousel::-webkit-scrollbar-thumb {
+    background-color: blue; /* Set the color of the thumb (the draggable part) */
+  }
+  
+  .carousel::-webkit-scrollbar-track {
+    background-color: lightskyblue; /* Set the color of the track (the non-draggable part) */
+  }
+  
+  /* Optional: Style the corners of the scrollbar */
+  .carousel::-webkit-scrollbar-corner {
+    background-color: lightskyblue;
+  }
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
 

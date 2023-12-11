@@ -46,7 +46,7 @@
   }
 
   .nav-links {
-    gap: 30px;
+    gap: 40px;
     list-style: none;
     font-size: xx-large;
     
@@ -88,6 +88,12 @@ section h1 {
 section .title-title {
     font-size: 200px;
     color: blue;
+    text-shadow: 
+    1px -1px 0 white,  
+    1px -1px 0 white,
+    -5px 3px 0 white,
+    3px 3px 0 white;
     
 }
+
 

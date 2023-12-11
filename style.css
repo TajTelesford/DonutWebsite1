@@ -13,6 +13,7 @@
     font-family: "Poppins", sans-serif;
     background-color: lightskyblue;
     
+    
   }
   
   html {
@@ -25,34 +26,30 @@
     transition: all 300ms ease;
   }
 
-  /* HEADER */
-
-  #title_header {
-    text-align: center;
-    font-size: 100px;
-    color: blue;
-    cursor: default;
-  }
+  
 
   /* DESKTOP NAV */
 
   nav,
   .nav-links {
     display: flex;
+    
   }
 
   nav {
     justify-content: space-around;
-    align-items: flex-end;
     height: 5vh;
     margin-bottom: 100px;
+    background-color: white;
+    
     
   }
 
   .nav-links {
-    gap: 15px;
+    gap: 30px;
     list-style: none;
-    font-size: x-large;
+    font-size: xx-large;
+    
   }
 
   a {
@@ -68,60 +65,29 @@
     text-decoration-color: blue;
   }
 
-/* IMAGE SLIDERS */
-
+  /* SECTIONS */
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 }
 
-.wrapper {
-    max-width: 1300px;
+section  {
+    text-align: center;
+    margin: 40vh 0;
+}
+
+section h1 {
+    text-align: center;
     
 }
 
-.wrapper,
-    .carousel {
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 0px;
-    overflow: hidden;
-}
-
-.carousel img {
-    height: 370px;
-    object-fit: cover;
-    width: calc(100% / 3);
-    margin-top: 200px;
-    margin-left: 14px;
+section .title-title {
+    font-size: 200px;
+    color: blue;
     
-}
-
-.carousel {
-    overflow-x: auto;
-}
-
-.carousel::-webkit-scrollbar {
-    height: 12px; /* Set the height of the scrollbar */
-  }
-  
-  .carousel::-webkit-scrollbar-thumb {
-    background-color: blue; /* Set the color of the thumb (the draggable part) */
-  }
-  
-  .carousel::-webkit-scrollbar-track {
-    background-color: lightskyblue; /* Set the color of the track (the non-draggable part) */
-  }
-  
-  /* Optional: Style the corners of the scrollbar */
-  .carousel::-webkit-scrollbar-corner {
-    background-color: lightskyblue;
-  }
-
-.carousel img:first-child {
-    margin-left: 0px;
 }
 
